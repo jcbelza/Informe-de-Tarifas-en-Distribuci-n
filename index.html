@@ -1,17 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-60VK4XSK60"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-60VK4XSK60');
-</script>
-  
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tarifas eléctricas residenciales en América Latina — Pliego vigente enero 2025 | Blog CIER</title>
@@ -101,7 +90,7 @@
   .s-head::before { content:''; display:block; width:36px; height:3px; background:var(--naranja); margin-bottom:14px; }
 
   /* Blockquote */
-  .bq { position:relative; margin:40px 0; padding:24px 28px 24px 32px; background:var(--crema); border-left:4px solid var(--azul); }
+  .bq { position:relative; margin:40px 0; padding:24px 24px 24px 24px; background:var(--crema); border-left:4px solid var(--azul); }
   .bq::before { content:'"'; font-family:'DM Serif Display',serif; font-size:80px; color:var(--azul); opacity:.15; position:absolute; top:-8px; left:14px; line-height:1; }
   .bq p { font-family:'DM Serif Display',serif; font-size:20px; line-height:1.5; color:var(--tinta); font-style:italic; position:relative; z-index:1; }
   .bq cite { display:block; margin-top:10px; font-size:11px; color:var(--gris); font-style:normal; letter-spacing:1px; text-transform:uppercase; }
@@ -112,8 +101,8 @@
     border: 1px solid #BFDBFE;
     border-left: 4px solid var(--azul);
     border-radius: 6px;
-    padding: 22px 28px 24px;
-    margin: 32px 0;
+    padding: 24px;
+    margin: 40px 0;
     color: #1a2e4a;
     line-height: 1.75;
     box-sizing: border-box;
@@ -126,54 +115,54 @@
     text-transform: uppercase;
     color: var(--azul);
     display: block;
-    margin-bottom: 14px;
-    padding-bottom: 12px;
+    margin-bottom: 12px;
+    padding-bottom: 10px;
     border-bottom: 1px solid #BFDBFE;
   }
   .nota-met-intro {
-    font-size: 14.5px;
+    font-size: 14px;
     font-weight: 400;
     color: #1a2e4a;
-    line-height: 1.75;
-    margin-bottom: 16px;
+    line-height: 1.7;
+    margin-bottom: 0;
+    padding-bottom: 12px;
+    border-bottom: 1px dashed #BFDBFE;
   }
   .nota-met-items {
     display: flex;
     flex-direction: column;
     gap: 0;
-    border-top: 1px dashed #BFDBFE;
-    padding-top: 14px;
   }
   .nota-met-item {
-    display: flex;
-    gap: 14px;
-    padding: 10px 0;
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 0 20px;
+    padding: 11px 0;
     border-bottom: 1px dashed #BFDBFE;
-    font-size: 14.5px;
-    line-height: 1.75;
+    font-size: 14px;
+    line-height: 1.7;
     font-weight: 400;
     color: #1a2e4a;
-    align-items: flex-start;
+    align-items: baseline;
   }
   .nota-met-item:last-child { border-bottom: none; padding-bottom: 0; }
   .nota-met-key {
-    flex-shrink: 0;
-    width: 170px;
     font-weight: 600;
-    font-size: 13px;
+    font-size: 13.5px;
     color: #2A4A7F;
-    padding-top: 2px;
+    padding-top: 0;
+    align-self: start;
+    padding-right: 8px;
   }
   .nota-met-val {
-    flex: 1;
     font-weight: 400;
-    font-size: 14.5px;
+    font-size: 14px;
     color: #1a2e4a;
-    line-height: 1.75;
+    line-height: 1.7;
   }
 
   /* ══ BUBBLE CHART BLOCK ══ */
-  .chart-block { margin:48px -20px; background:#0F172A; border-radius:8px; padding:36px 32px; position:relative; overflow:hidden; }
+  .chart-block { margin:48px 0; background:#0F172A; border-radius:8px; padding:36px 32px; position:relative; overflow:hidden; }
   .chart-block::before { content:''; position:absolute; top:-60px;right:-60px; width:300px;height:300px; background:radial-gradient(circle,rgba(65,105,225,.12) 0%,transparent 70%); pointer-events:none; }
   .cb-eyebrow { font-size:12px; font-weight:700; letter-spacing:3px; text-transform:uppercase; color:var(--naranja); margin-bottom:10px; }
   .cb-title { font-family:'DM Serif Display',serif; font-size:26px; color:#FFFFFF; line-height:1.2; margin-bottom:10px; }
@@ -187,7 +176,7 @@
 
   /* ══ FACTURA CARDS ══ */
   .factura-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin:32px 0; }
-  .fac-card { background:var(--crema); border:1px solid var(--borde); border-radius:6px; padding:16px 14px; text-align:center; }
+  .fac-card { background:var(--crema); border:1px solid var(--borde); border-radius:6px; padding:16px; text-align:center; }
   .fac-pais { font-size:11px; font-weight:600; color:var(--gris); letter-spacing:1px; text-transform:uppercase; margin-bottom:10px; }
   .fac-val { font-family:'DM Serif Display',serif; font-size:30px; line-height:1; color:var(--tinta); }
   .fac-currency { font-size:14px; vertical-align:super; font-family:'DM Sans',sans-serif; font-weight:600; color:var(--gris); }
@@ -195,10 +184,11 @@
   .fac-bar { height:4px; border-radius:2px; margin:10px 0 0; }
 
   /* ══ CLOSING BOX ══ */
-  .close-box { border:1px solid var(--borde); border-top:3px solid var(--azul); padding:24px 22px; margin:40px 0; background:var(--papel); }
+  .close-box { border:1px solid var(--borde); border-top:3px solid var(--azul); padding:24px; margin:40px 0; background:var(--papel); border-radius:4px; }
   .close-box-title { font-family:'DM Serif Display',serif; font-size:15px; color:var(--azul); text-transform:uppercase; letter-spacing:1px; margin-bottom:14px; padding-bottom:10px; border-bottom:1px solid var(--borde); font-style:normal; }
-  .cb-li { display:flex; gap:12px; font-size:14.5px; line-height:1.65; margin-bottom:11px; align-items:flex-start; color:#374151; }
-  .cb-li::before { content:'→'; color:var(--naranja); font-weight:700; flex-shrink:0; margin-top:1px; }
+  .cb-li { display:flex; gap:10px; font-size:14.5px; line-height:1.65; margin-bottom:14px; align-items:flex-start; color:#374151; }
+  .cb-li::before { content:'→'; color:var(--naranja); font-weight:700; flex-shrink:0; margin-top:2px; line-height:1.65; }
+  .cb-li span { flex:1; display:block; }
 
   /* ══ FOOTER ══ */
   .art-footer { padding:28px 0 0; border-top:2px solid var(--tinta); display:flex; justify-content:space-between; align-items:flex-start; gap:20px; flex-wrap:wrap; }
@@ -287,7 +277,7 @@
   <!-- CUERPO -->
   <div class="prose">
     <p>
-      El sector eléctrico latinoamericano presenta una notable diversidad de estructuras tarifarias. En 2025, las tarifas residenciales relevadas por la CIER van desde <strong class="hl">60 U$S por MWh</strong> — en una distribuidora de Paraguay, cuya estructura de costos se apoya en la generación hidroeléctrica de Itaipú y Yacyretá — hasta <strong class="hl">333 U$S por MWh</strong> en una empresa de Guatemala. Esta amplitud refleja diferencias estructurales en la matriz energética, los esquemas regulatorios y las políticas tarifarias de cada país.
+      El sector eléctrico latinoamericano presenta una notable diversidad de estructuras tarifarias. En 2024, las tarifas residenciales relevadas por la CIER van desde <strong class="hl">60 U$S por MWh</strong> — en una distribuidora de Paraguay, cuya estructura de costos se apoya en la generación hidroeléctrica de Itaipú y Yacyretá — hasta <strong class="hl">333 U$S por MWh</strong> en una empresa de Guatemala. Esta amplitud refleja diferencias estructurales en la matriz energética, los esquemas regulatorios y las políticas tarifarias de cada país.
     </p>
     <p>
       El Cuadro 5.d del Informe de Tarifas Eléctricas 2025 de la CIER reúne los datos de <strong class="hl">37 empresas distribuidoras en 11 países</strong>, con información sobre facturación total, energía distribuida, tarifas promedio y consumos por cliente. No se trata de un registro de precios nacionales: es la información aportada por las distribuidoras participantes de la muestra CIER, que permite identificar patrones y tendencias en el mercado residencial regulado de la región.
@@ -309,7 +299,7 @@
       <canvas id="bubbleChart"></canvas>
     </div>
     <div class="cb-footer">
-      Fuente: CIER — Informe de Tarifas Eléctricas 2025, Cuadro 5.d. Datos con pliegos tarifarios de enero 2025. Mercado regulado residencial, incluye impuestos e IVA.
+      Fuente: CIER — Informe de Tarifas Eléctricas 2025, Cuadro 5.d. Datos año 2024. Mercado regulado residencial, incluye impuestos e IVA.
       Tarifa ponderada = total facturado (U$S) ÷ total energía facturada (MWh) del grupo de empresas de cada país.
       El tamaño de la burbuja es proporcional al número de clientes residenciales del grupo. ·
       <strong style="color:#E2EAF0">Pliego tarifario y tipo de cambio U$S compra: vigentes al 02/01/2025.</strong>
@@ -322,7 +312,8 @@
     </p>
   </div>
 
-  
+
+
     <!-- SECCIÓN FACTURA MENSUAL -->
   <div class="s-head">La factura mensual estimada: tarifa y consumo en perspectiva</div>
 
@@ -336,7 +327,7 @@
 
   <div class="prose" style="margin-top:8px">
     <p>
-      En el conjunto de la muestra, Bolivia presenta la factura mensual estimada más reducida — aproximadamente <strong class="hl">U$S 10,5</strong> —, resultado de una tarifa moderada combinada con un consumo acotado en las dos distribuidoras relevadas. Uruguay, con empresa única en la muestra, alcanza los U$S 60,7 por hogar al mes, el valor más elevado del grupo, por la confluencia de una tarifa alta y un consumo mensual de 247 kWh. Argentina, con una tarifa ponderada de 92 U$S/MWh — segunda en el rango inferior del conjunto —, registra una factura estimada de U$S 23, explicada en buena medida por el elevado consumo promedio de sus hogares — 250 kWh/mes según el promedio ponderado de las 12 distribuidoras relevadas.
+      En el conjunto de la muestra, Bolivia presenta la factura mensual estimada más reducida — aproximadamente <strong class="hl">U$S 10,5</strong> —, resultado de una tarifa moderada combinada con un consumo acotado en las dos distribuidoras relevadas. Argentina, con una tarifa ponderada de 92 U$S/MWh — segunda en el rango inferior del conjunto —, registra una factura estimada de U$S 23, explicada en buena medida por el elevado consumo promedio de sus hogares — 250 kWh/mes según el promedio ponderado de las 12 distribuidoras relevadas.
     </p>
   </div>
 
@@ -345,7 +336,7 @@
 
   <div class="prose">
     <p>
-      Agrupando las tarifas ponderadas de la muestra es posible identificar tres rangos diferenciados. El <strong class="hl">rango superior</strong> — por encima de 200 U$S/MWh — reúne los promedios ponderados de Guatemala (264), El Salvador (260), Perú (257), Uruguay (246, empresa única), Colombia (211) y Panamá (203, empresa única). En los países con múltiples distribuidoras, la variación interna es notable: en Guatemala las empresas relevadas van de 215 a 333 U$S/MWh, y en El Salvador de 235 a 299 U$S/MWh, lo que indica que el promedio ponderado condensa realidades tarifarias heterogéneas dentro de un mismo país.
+      Agrupando las tarifas ponderadas de la muestra es posible identificar tres rangos diferenciados. El <strong class="hl">rango superior</strong> — por encima de 200 U$S/MWh — reúne los promedios ponderados de Guatemala (264), El Salvador (260), Perú (257), Colombia (211) y Panamá (203, empresa única). En los países con múltiples distribuidoras, la variación interna es notable: en Guatemala las empresas relevadas van de 215 a 333 U$S/MWh, y en El Salvador de 235 a 299 U$S/MWh, lo que indica que el promedio ponderado condensa realidades tarifarias heterogéneas dentro de un mismo país.
     </p>
     <p>
       El <strong class="hl">rango intermedio</strong> — entre 130 y 200 U$S/MWh — incluye Costa Rica (177, dos distribuidoras con valores muy próximos entre sí: 168 y 178 U$S/MWh) y Brasil (168, empresa única que con casi 8 millones de clientes constituye la distribuidora de mayor escala de toda la muestra). Son mercados con estructuras tarifarias relativamente consolidadas y matrices energéticas diversificadas.
@@ -358,11 +349,11 @@
   <!-- CIERRE -->
   <div class="close-box">
     <div class="close-box-title">Principales observaciones del Cuadro 5.d — 2024</div>
-    <div class="cb-li">Con <strong>38,1 millones de clientes y U$S 12.000 millones facturados</strong>, la muestra CIER agrupa distribuidoras de relevancia en sus respectivos mercados, si bien no representa la totalidad del sector residencial de cada país.</div>
-    <div class="cb-li">La <strong>amplitud tarifaria de 5,5 veces</strong> entre el valor más reducido (60 U$S/MWh, empresa paraguaya) y el más elevado (333 U$S/MWh, empresa guatemalteca) refleja diferencias estructurales en matriz energética, esquemas de subsidio y marcos regulatorios que no tienen resolución en el corto plazo.</div>
-    <div class="cb-li">La <strong>relación inversa entre tarifa y consumo</strong> es la regularidad más consistente del conjunto de datos: los grupos de empresas con tarifas más elevadas registran sistemáticamente menores consumos mensuales por hogar.</div>
-    <div class="cb-li"><strong>Los valores por país son promedios ponderados</strong> de las empresas participantes de la muestra, no tarifas nacionales oficiales. La composición varía: hay países con empresa única (Uruguay, Paraguay, Brasil, Panamá) y países con múltiples distribuidoras (Argentina, Colombia, El Salvador, Guatemala, Perú), en los que la dispersión interna puede ser significativa.</div>
-    <div class="cb-li">El informe completo, con datos de tarifas industriales, consumidores típicos y series históricas, está disponible en <strong>cier.org</strong>.</div>
+    <div class="cb-li"><span>Con <strong>38,1 millones de clientes y U$S 12.000 millones facturados</strong>, la muestra CIER agrupa distribuidoras de relevancia en sus respectivos mercados, si bien no representa la totalidad del sector residencial de cada país.</span></div>
+    <div class="cb-li"><span>La <strong>amplitud tarifaria de 5,5 veces</strong> entre el valor más reducido (60 U$S/MWh, empresa paraguaya) y el más elevado (333 U$S/MWh, empresa guatemalteca) refleja diferencias estructurales en matriz energética, esquemas de subsidio y marcos regulatorios que no tienen resolución en el corto plazo.</span></div>
+    <div class="cb-li"><span>La <strong>relación inversa entre tarifa y consumo</strong> es la regularidad más consistente del conjunto de datos: los grupos de empresas con tarifas más elevadas registran sistemáticamente menores consumos mensuales por hogar.</span></div>
+    <div class="cb-li"><span><strong>Los valores por país son promedios ponderados</strong> de las empresas participantes de la muestra, no tarifas nacionales oficiales. La composición varía: hay países con empresa única (Paraguay, Brasil, Panamá) y países con múltiples distribuidoras (Argentina, Colombia, El Salvador, Guatemala, Perú), en los que la dispersión interna puede ser significativa.</span></div>
+    <div class="cb-li"><span>El informe completo, con datos de tarifas industriales, consumidores típicos y series históricas, está disponible en <strong>cier.org</strong>.</span></div>
   </div>
 
   <!-- NOTA METODOLÓGICA -->
